@@ -1,14 +1,74 @@
-#Demo{
-    color: rgb(255, 0, 0);
-}
-
-
 *{
     margin: 0px;
     padding: 0%;
 }
+/* Section 1 ------------------------------ */
+body{
+    overflow-x: hidden;
+}
 
+/* Section 1 ------------------------------ */
 .Section1{
+    background-image:url(assets/src/img/Fond_ecran.png);
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    overflow-x: hidden;
+}
+
+.Header{
+    height: 80px;
+    width: 100%;
+}
+.Logo{
+    width: 4%;
+    padding-left: 80px;
+}
+
+.Text1{
+    font-family: "Agbalumo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 160px;
+}
+
+.Brandon{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Ayave{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.RectangleHaut{
+    background-color: black;
+    height: 100px;
+    width: 35%;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.RectangleBas{
+    background-color: black;
+    height: 100px;
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+/* Section 2********************************************/
+
+.Section2{
     background-color: burlywood;
     height: 100vh;
     width: 100%;
@@ -17,37 +77,168 @@
     align-items: center;
 }
 
-.Section2{
-    background-color: blue;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Section 3********************************************/
 
 .Section3{
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Text3{
+    width: 100%;
+    font-family: "Agbalumo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    padding-left:150px;
+    
+}
+
+.Blocs1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Blocs2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Lesblocs{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.Bloc{
+    height: 200px;
+    width: 24%;
+    border-radius: 10px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.boutonSec3{
+    height: 7vh;
+    width: 15%;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 100px;
+
+}
+
+.Logiciel{
+    width: 30%;;
+}
+
+.Figma{
+    width: 25%;;
+}
+
+.HTML{
+    width: 37%;;
+}
+
+.CSS{
+    width: 27%;;
+}
+
+/* Section 4********************************************/
 
 .Section4{
     background-color: brown;
     height: 100vh;
     width: 100%;
     display: flex;
+}
+
+.Gauche{
+    background-color: gainsboro;
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    padding-left: 150px;
+}
+
+.Text4{
+    font-family: "Agbalumo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:25px;
+    width: 75%;
+}
+
+.Paragraphe{
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    height: 21vh;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#TitreVisuel{
+    opacity: 15%;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Section 5********************************************/
+
 .Section5{
-    background-color: cadetblue;
+    background-image:url(assets/src/img/Fond_ecran.png);
+    background-size: 100%;
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.Text5{
+    font-family: "Agbalumo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:25px;
+    width: 75%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.Logo2{
+    width: 15%
+}
+
+.Contact{
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    height: 21vh;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
