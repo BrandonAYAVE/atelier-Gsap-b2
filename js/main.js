@@ -18,6 +18,8 @@ mm.add({
 }
 )
 
+// Scrolltrigger Section 1 ------------------------------------------------------
+
 let tlIntro = gsap.timeline({
     scrollTrigger:{
         trigger:".Section1",
@@ -32,46 +34,164 @@ let tlIntro = gsap.timeline({
 })
 
 tlIntro.to(".RectangleHaut",{
-    //y: 360,
+    
     height: '40vh',
     duration: 2,
 })
 .to(".RectangleBas",{
-   // y: -360,
+   
     height: '40vh',
     duration: 2,
 })
 
-/*gsap.to('.RectangleHaut', {
-    scrollTrigger: '.RectangleHaut', // start the animation when ".box" enters the viewport (once)
+tlIntro.to(".Text1Intro",{
+    
+    opacity: 1,
+    duration: 8,
+})
+tlIntro.to(".Text2Intro",{
+    
+    opacity: 1,
+    duration: 8,
+})
 
-    y: 500
-});*/
-
-//gsap.to(".Text1",{
-//    duration: 5,
-//    motionPath: {
-//        path: "M20.0349 1C13.3683 1.83333 0.234948 8.5 1.03495 28.5C1.83495 48.5 14.0349 49.5 20.0349 47.5C43.2349 41.1 41.7016 32.1667 38.0349 28.5C25.3683 18.8333 2.03494 13.5 10.0349 69.5C10.0349 96.7 16.7016 100.833 20.0349 99.5C28.0349 100.167 42.8349 98.9 38.0349 88.5C32.0349 75.5 10.0349 49 10.0349 122.5C10.0349 148.1 22.7016 155.167 29.0349 155.5C35.0349 154.5 45.2349 149.5 38.0349 137.5C29.0349 122.5 0.0349445 147 10.0349 170",
-//    }
-//})
-
-let timelineText2 = gsap.timeline();
-
-timelineText2.to(".Text2",{x:100,})
-.to(".Text2",{y:100,})
-.to(".Text2",{x:-100,})
-.to(".Text2",{y:-100,})
-
-/*Draggable.create(".RectangleHaut",{
-    type: "x , y",
-    bounds: ".Section1",
-
-    onDrag: function(){
-        document.querySelector(".RectangleHaut").style.width = "250px";
-    },
-
-    onDragEnd: function(){
-        document.querySelector(".RectangleHaut").style.width = "450px";
-
+// Section 2 -----------------------------------------------------
+let tl1Section2 = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".Section2",
+        markers: true,
+        id:".Section2",
+        start: "top 0%",
+        end: "+=3000",
+        pin: true,
+        scrub: true,
+        toggleActions: "play none reverse reset",
     }
-})*/
+})
+
+tl1Section2.to(".Text1Sec2", {
+    y:-450,
+    opacity: 1,
+    duration: 2,
+})
+
+.to(".Text2Sec2", {
+    y:-400,
+    opacity: 1,
+    duration: 2,
+})
+
+.to(".Text3Sec2", {
+    y:-350,
+    opacity: 1,
+    duration: 2,
+})
+
+
+// Timeline Section 3 -----------------------------------------------------
+let timelineLogiciel1 = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".Section3",
+        markers: true,
+        id:".Section3",
+        start: "top bottom",
+        end: "+=2000",
+        scrub: true,
+    }
+})
+
+timelineLogiciel1.to(".Logiciel",{x:100,})
+.to(".Logiciel",{y:200,})
+.to(".Logiciel",{x:-100,})
+.to(".Logiciel",{y:-10,})
+
+let timelineLogiciel2 = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".Section3",
+        markers: true,
+        id:".Section3",
+        start: "top bottom",
+        end: "+=2000",
+        scrub: true,
+    }
+});
+timelineLogiciel2.to(".Figma", {x:-100})
+.to(".Figma", {y:-200,})
+.to(".Figma", {x:100,})
+.to(".Figma", {y:10,})
+
+let timelineLogiciel3 = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".Section3",
+        markers: true,
+        id:".Section3",
+        start: "top bottom",
+        end: "+=2000",
+        scrub: true,
+    }
+});
+timelineLogiciel3.to(".HTML", {x:-100})
+.to(".HTML", {y:-200,})
+.to(".HTML", {x:100,})
+.to(".HTML", {y:10,})
+
+let timelineLogiciel4 = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".Section3",
+        markers: true,
+        id:".Section3",
+        start: "top bottom",
+        end: "+=2000",
+        scrub: true,
+    }
+});
+timelineLogiciel4.to(".CSS", {x:-100})
+.to(".CSS", {y:-200,})
+.to(".CSS", {x:100,})
+.to(".CSS", {y:10,})
+
+let timelineLogiciel5 = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".Section3",
+        markers: true,
+        id:".Section3",
+        start: "top bottom",
+        end: "+=2000",
+        scrub: true,
+    }
+});
+timelineLogiciel5.to(".WordPress", {x:-100})
+.to(".WordPress", {y:-200})
+.to(".WordPress", {x:100,})
+.to(".WordPress", {y:10,})
+// Draggable Section 4 -----------------------------------------------------
+
+let tlSection4 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#Section4",
+        markers: true,
+        id:"Section4",
+        start:"top 0%",
+        end: "+=4000",
+        pin: true,
+        scrub: 1,
+        toggleActions: "play none reverse reset",
+    }
+})
+
+tlSection4.to(".Images2",{
+    
+    opacity: 1,
+    duration: 8,
+})
+tlSection4.to(".Images3",{
+    
+    opacity: 1,
+    duration: 8,
+})
+// Draggable Section 5 -----------------------------------------------------
+Draggable.create(".Logo2",{
+    type:"x,y",
+    bounds: ".Section5",
+    dragResistance: 0.5,
+})
