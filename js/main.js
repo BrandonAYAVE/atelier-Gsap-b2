@@ -22,9 +22,9 @@ mm.add({
 
 let tlIntro = gsap.timeline({
     scrollTrigger:{
-        trigger:".Section1",
+        trigger:"#Section1",
         markers: true,
-        id:"Section1",
+        id:"#Section1",
         start:"top 0%",
         end: "+=2000",
         pin: true,
